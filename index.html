@@ -132,7 +132,7 @@
             font-size: 0.9em;
         }
         </style>
-
+      
 
         <style>
         html, body, #map {
@@ -145,6 +145,8 @@
         <title>Sargaço Flutuante</title>
     </head>
     <body>
+
+
         <div id="map">
             <div id="popup" class="ol-popup">
                 <a href="#" id="popup-closer" class="ol-popup-closer"></a>
@@ -164,8 +166,8 @@
                     <p>Para pontos fora das áreas mapeadas, por favor contacte:</p>
                     <div class="modal-contact">
                         <p><strong>D. R. Ambiente e Mar</strong></p>
-                        <p><strong>Telefone:</strong> 291 000 000</p>
-                        <p><strong>Email:</strong> exemplo@madeira.gov.pt</p>
+                        <p><strong>Telefone:</strong> 291 145 610</p>
+                        <p><strong>Email:</strong> dram@madeira.gov.pt</p>
                     </div>
                 </div>
             </div>
@@ -198,6 +200,8 @@
             <button id="refresh-points">
                 <i class="fas fa-sync-alt"></i> Limpar Pontos
             </button>
+        </button>
+        <button id="reset-map" class="offset-button">Recentrar Mapa</button>
         </div>
 
 
@@ -221,6 +225,15 @@
         <script src="./resources/Autolinker.min.js"></script>
         <script src="./resources/qgis2web.js"></script>
         <script src="map.js"></script>
+        
+        <script>           
+            document.getElementById('reset-map').addEventListener('click', function() {
+                
+                map.getView().setCenter([333318.60, 3634315.09]); 
+                map.getView().setZoom(11); 
+            });
+        
+        </script>
     </body
 </html>
 
