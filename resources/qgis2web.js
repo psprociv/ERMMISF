@@ -868,9 +868,8 @@ map.addControl(bottomAttribution);
 
 var attributionList = document.createElement('li');
 attributionList.innerHTML = `
-	<a href="https://github.com/tomchadwin/qgis2web">qgis2web</a> &middot;
-	<a href="https://openlayers.org/">OpenLayers</a> &middot;
-	<a href="https://qgis.org/">QGIS</a>	
+	<a href="https://procivmadeira-my.sharepoint.com/:f:/g/personal/ana_pinheiro_procivmadeira_pt/EjCoSy1QovNMtn7ik0oDN_EBamOCIcQuEOeRWMil61_poQ?e=xqM0yW">ACESSO RESERVADO</a> &middot;
+
 `;
 bottomAttribution.element.appendChild(attributionList);
 
